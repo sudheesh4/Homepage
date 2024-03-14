@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resume </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+<style>
+.proj{
+position: relative;
+display: inline-block;
+width:100px;
+padding-top: 26px;
+padding-left:50px;
+  top: 0%;
+  left: 200%;
+    cursor: pointer;
+}
+.proj:hover{
+opacity:0.5;
+}
+
+
+.projsel{
+opacity:0.5;
+color:red;
+}
+ /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.projdets{
+position:relative;
+//background-color:blue;
+  top: 5%;
+  left: 5%;
+  
+
+}
+
+
+#project-details{
+position:relative;
+padding-top:25px;
+padding-left:20px;
+  top: 5%;
+  left: 5%;
+}
+#project-text{
+position:relative;
+  top: 5%;
+  left: 25%;
+  width:400px;
+  max-width:400px;
+  font-size: 11px;
+  height:200px;
+
+}
+
+
+#project-img{
+position:relative;
+top:50%;
+left:25%;
+width:330px;
+//max-width:100px;
+ height:230px;
+//max-height:100px;
+//background-color:black;
+padding-top:25px;
+
+}
+
+#fig-dets{
+//background-color:black;
+position:absolute;
+top:75%;
+left:54%;
+width:150px;
+//max-width:100px;
+ height:100px;
+   font-size:10px;
+}
+
+#more-dets{
+position:absolute;
+top:100%;
+left:25%;
+
+   font-size:12px;
+   text-decoration: underline;
+   cursor:pointer;
+   color:#bd5d38;
+   
+}
+#more-dets:hover{
+background-color:#bd5d38;
+color:white;
+text-decoration: initial;
+}
+
+.details{
+color:white;
+opacity:0;
+width:50%;
+height:60%;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-43%,-40%);
+z-index:-10;
+visbility:hidden;
+//border:1px solid #bd5d38;
+display:block;
+
+}
+
+.detailshow{
+opacity:1;
+z-index:0;
+}
+.detailshide{
+opacity:0;
+z-index:-1;
+}
+
+.details-header{
+
+background-color:#bd5d38;
+text-align:center;
+font-size:35px;
+font-family: 'Saira Extra Condensed',serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40
+}
+.details-close{
+position:absolute;
+top:0%;
+left:100%;
+}
+.details-body{
+background-color:#bd5d38 ;
+width:100%;
+height:100%;
+overflow-y: auto;
+}
+.dets_im{
+width:230px;
+//max-width:200px;
+// height:200px;
+//max-height:100px;
+//background-color:black;
+padding-top:25px;
+padding-left:30px;
+}
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: wrap-content;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+</style>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none"> </span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpeg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+      <!--    <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Sudheesh
+            <span class="text-primary">Srivastava</span>
+          </h1>
+          <div class="subheading mb-5"> (646) 250 1237 ·
+            <a href="mailto:ssrivastava@gradcenter.cuny.edu">ssrivastava@gradcenter.cuny.edu</a>
+          </div>
+          <p class="mb-5">
+          A curious mind trying to blend the elegance of physics with the precision of programming. 
+          As a doctoral student in physics with a knack for software-development, I navigate the realms of mathematics, software engineering and AI with inquisitive fascination.
+          With experience in front-end development, Python applications, mathematical modeling, and data science, I bring a unique mix of analytical prowess and creative flair to every project.
+          My interdisciplinary sensibilities keep my motivations driven and curiosity humble.
+          </p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/sudheesh4/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/jointedace" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/sudheesh-srivastava-formal/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/sudheesh4" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Adjunct Lecturer</h3>
+              <div class="subheading mb-3">City College of New York</div>
+              <p>
+                Lab instructor for an undergraduate course.
+                Taught various experiments covering basics of introductory physics.
+                Helped improve the avearage performance of batch with constructive feedback.
+                
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2020 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Research Assistant</h3>
+              <div class="subheading mb-3">Tokyo Metropolitan University</div>
+              <p>
+              Research intern at the physics department. 
+              Investigated conceptual signatures for understanding the proposed hypothesis. 
+              Contributed numerical calculations and visualisations, using python, to validate suggested theoretical direction.
+              Optimised and improved the computational codebase to reduce simulation time.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019 - April 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Engineer</h3>
+              <div class="subheading mb-3">Info Edge India Ltd </div>
+              <p>
+            Software developer in company's NAUKRI vertical. 
+            Contributed as a front-end developer. Primarily worked with REACT.JS and REDUX
+            to create various components for user-interface in the application service, following an AGILE methodology.
+            
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2018 - December 2018</span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Graduate Center, City University of New York</h3>
+              <div class="subheading mb-3">PhD</div>
+              <div>Physics ( Condensed Matter )</div>
+              <p>GPA: 3.6 / 4.0 </p>
+              <p> Investigated physics of condensed systems,
+              with a focus on active-fluids and light-matter-hybrids (polaritons).
+              
+              Carried out computational experiments, numerical calculations
+              and analytical studies to understand the conceptual conseqeunces of
+              introducing complexity of 'broken-parity' (or presence of activity) in fluids.
+              Examples of systems with such emergent behaviour include fluids description of bacteria fluids, ferro-fluids etc.
+              
+              Worked out a design protocol to experimentally create a 'polartion' based quantum-simulator
+              for pedagogical condensed matter models.
+             
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2019 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Indian Institute of Technology , BHU , Varanasi</h3>
+              <div class="subheading mb-3">Integrated Masters (M.Tech)</div>
+              <div>Engineering Physics</div>
+              <p>GPA: 7.9 / 10.0 </p>
+              
+              <p>
+              Integarted undergraduate and masters program at intersection of engineering and applied physics.
+              Improved understanding of the physical underpinning across various domains of engineering.
+              Focused on theoretical study of nanomechanical quantum sensors.
+              
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2013 - May 2018</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+  <!--    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">  </div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3"> </div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>-->
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+        </div>
+      </section> 
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+       <!--   <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul>-->
+ <ul class="list-inline list-icons" id="project-list">
+                   <li class="list-inline-item" id="p0">
+                     <img src="img/acad.png" class= "proj projsel"> </img>
+                   </li>
+                     
+   <li class="list-inline-item" id="p1">
+     <img src="img/dsn.png" class= "proj"> </img>
+
+   </li>
+      <li class="list-inline-item" id="p2">
+        <img src="img/mth.png" class= "proj"> </img>
+      </li>
+               <li class="list-inline-item" id="p3">
+                 <img src="img/pyth.png" class= "proj"></img>
+               </li>
+
+
+</ul>
+<div class="projdets" >
+<h3 id="project-details"></h3>
+<p id="project-text"></p>
+<div>
+<figure class="project-fig">
+<img id="project-img">
+<div id="fig-dets">
+ 
+</div>
+
+</figure>
+
+</div>
+<div id="more-dets">
+ Read More
+</div>
+
+</div>
+
+
+           <div class="popup" onclick="myFunction()">
+  <span class="popuptext" id="myPopup">asfasfhahsfasfasjfjsafjahsjfhajsfhsakfasfhash</span>
+</div> 
+        </div>
+      </section>
+
+    </div>
+    <div id="details" class="details">
+    <div class="details-header">
+    <h4 class="details-title"></h4>
+    <button class="details-close" onclick="closedets()">&times;</button>
+    </div>
+    <div class="details-body">
+
+    </div>
+    </div>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    
+    <script type="text/javascript">
+    var selected="p0";
+    var DATA=["Academic", "Data-Science", "Math","Software"];
+    var DETAILS=[
+    //"Through my research in various physical systems, I have improved my understainng of how mathematical modelling helps us understand physical aspects of reality, and consqeutnly the physical behaviur of different contexts. I have explored physics in the following domains in varying extents. I have worked on modelling theoretical quantum-sensors by utilising the nanomechanical properties of resonators, wherein the 'chaotic' dynamics of an oscillating nanomechanical beam enhances the coherence between two 'qubits' (the analogue of classical bit for quantum-computation).   I have worked on investigating the properties of fluids which have additional 'active' response to strain, through nontrivial stress geometry of the system; This gives rise to novel physics, which can be squared neatly with the physical intuition, giving some insights into self-organisation in different systems. I have also worked on designing cavity-polariton based quantum-simulator of models used in condensed matter. These designs are used to understand properties (like electrical transport in media) using photons.    ",
+    "Through my diverse research endeavors, I've deepened my understanding of how mathematical modeling elucidates physical phenomena across various contexts. My investigations span several domains: from modeling theoretical quantum sensors leveraging nanomechanical resonators to enhance qubit coherence, to exploring fluids with active responses to strain, yielding insights into self-organization. Additionally, I've contributed to designing cavity-polariton quantum simulators for condensed matter models, employing photons to probe properties like electrical transport.",
+    "In my quest to comprehend data-driven decision-making and operational optimization in businesses, I analyzed a supermarket dataset to uncover transactional trends, focusing on sales and profit dynamics. Customer segmentation revealed revenue insights, while examining annual yield distribution highlighted varied growth paths across product categories. Monthly variations disclosed seasonal demand patterns, informing strategies like optimized inventory restocking and targeted marketing. Instagram reach data uncovered metric correlations, aiding engagement strategies. Exploring machine learning in stock analysis revealed volatility's impact on modeling, while portfolio optimization emphasized maximizing ROI and covariance matrix analysis. Rigorous backtesting and modular Python architecture showcased promising outcomes for future strategy integration.",
+  //  "In my journey to understand the intricacies of data-driven decision-making and operational optimization within businesses, I analyzed a publicly available dataset from a supermarket to unveil transactional trends, focusing on sales and profit dynamics. Segmentation of customers by purchasing behaviors offered insights into revenue streams, while examining annual yield distribution highlighted divergent growth trajectories across product categories. Exploring monthly variations revealed seasonal demand-supply patterns, informing operational strategies like optimized inventory restocking and targeted marketing campaigns. Similarly, leveraging data from Instagram reach statistics underscored correlations between metrics, aiding content creators in optimizing engagement strategies. Furthermore, delving into machine learning applications in stock market analysis unveiled the impact of volatility on predictive modeling accuracy, while exploring portfolio optimization strategies highlighted the importance of maximizing Return on Investment (ROI) and covariance matrix analysis. Through rigorous backtesting and modular Python architecture implementation, these endeavors demonstrated promising outcomes, paving the way for future iterations and integration of additional strategies with minimal adjustments.",
+    "Exploring mathematical ideas, recreationally, using programming has been an enriching activity for my sensibilities. An inexhaustible list of the directions that I have explored are as follows. From exploring simple functions to unraveling complex dynamics, mathematics offers a journey of discoveries. Implicit equations reveal geometric insights, while concepts like integrability shed light on system dynamics from a qualitative point of view. Dynamical systems has ubiqutous features like the Lorenz attractor that illustrate scalar interdependence. Quantum computing is an emerging paradigm of computation with promising intersection with machine learning. The Abelian sandpile model exemplifies self-organized criticality, a phenomenon that cuts across domains and is widespread in science of complex systems. The Korteweg–De Vries equation unveils soliton solutions, encapsulating mathematical beauty and complexity even in nonlinear behaviours.",
+   // "Creating softwares and small applications for personal use-cases, has informed my design sensibilities specifically, and system-thinking in general. I have primarily worked on applications based on python, for abput 10 years. I have employed various services (APIs and third-party modules) to implement different techniques like web-scraping, scietific-computation, network communication. Over the years working on these projects has helped me improve my own programming practices as well, for instance improving data-management in complex modules, optimising code by breaking it into modular pieces, improving documentaion and adhering to conventions of coding. I have also worked in web-development which has familiarised me with the approaches used to design user-interfaces. I have worked with technologies like REACT.JS, REDUX. I understand the software-development cycle and am reasonably familiar with testing and debugging that goes into pre-production release.  ",
+   "Over the past decade, my experience in software development, primarily focused on Python, has honed my design sensibilities and system-thinking skills. I've leveraged various services such as APIs and third-party modules to implement diverse techniques like web-scraping, scientific computation, and network communication. Throughout these projects, I've refined my programming practices, including data management, modular code design, documentation, and adherence to coding conventions. Additionally, my involvement in web development, utilizing technologies like React.js and Redux, has deepened my understanding of user interface design. Familiarity with the software development lifecycle, along with testing and debugging methodologies, rounds out my skill set for efficient pre-production release."
+   ];
+    
+    var IMAGES=["NL_AA.png","portfolio_backtest.png","qcmp.png","docquiz.png"];
+    
+    var IMGDETS=["Cavity-Polariton based quantum-simulator benchmarking.",
+    "Cummulative-return performance, for sample portfolio optimisation strategies, in backtesting .",
+    "Sample quantum-circuit used for binary-classification on IRIS dataset",
+    "Document quiz software: upload documents and get quized along with recieving a feedback."    
+    ];
+    
+    
+    
+    
+    
+
+    var bods="<ul>    <li><h5>Segmentation analysis</h5><p>In my pursuit of unraveling the intricacies of data-driven decision-making and operational optimization within businesses, I embarked on an exploration aimed at deciphering the narratives embedded within various documented metrics pertaining to consumer-company interactions. Leveraging a publicly available dataset sourced from a supermarket, I conducted an analytical investigation to discern transactional trends, specifically focusing on sales and profit dynamics within the company's operations. The process involved the segmentation of customers based on their purchasing behaviors, offering valuable insights into the revenue streams fueling the supermarket's growth.</p><img class='dets_im' src='img/data/profit_segment.png'>&nbsp&nbsp  &nbspSegmentation of store's revenue</img><img class='dets_im' src='img/data/profir_category.png'></img><p> Additionally, an analysis of annual yield and its distribution shed light on the divergent growth trajectories observed across distinct product categories, thereby highlighting key revenue-generating assets within the supermarket's portfolio. Furthermore, delving into the monthly variations of specific product classes unveiled discernible patterns indicative of seasonal fluctuations in demand-supply dynamics.<br><img class='dets_im' src='img/data/monthly_tech.png'>&nbspMonthly variation of revenue for a specific category.</img> <p>These insights carry significant implications for operational optimization strategies within the supermarket. For instance, leveraging such insights facilitates the optimization of inventory restocking frequencies for various products, enabling a more balanced and efficient allocation of fiscal resources. By transitioning towards a fluid and consistent approach to replenishment, the supermarket can alleviate the strain associated with sporadic inventory fluctuations. Moreover, utilizing demand-supply variations to inform targeted marketing campaigns allows for the strategic promotion of products experiencing heightened demand during specific periods of the year. This proactive approach to marketing endeavors has the potential to catalyze sales by capitalizing on emerging consumer trends and preferences.</p> </li> <li> <h5>Feature correlations</h5> <p> To explore how data can enhance content engagement, I delved into publicly available data concerning the reach statistics of an Instagram account. By examining correlations between different post metrics, my aim was to uncover patterns shedding light on user engagement behaviors. The analysis revealed intriguing insights, notably highlighting strong correlations between certain metrics. For instance, there was a pronounced correlation between post impressions and likes, indicating a significant association between visibility and user interaction.</p><img class='dets_im' src='img/data/likeimpression.png'>Correlations between impressions and likes. </img><br><p> Conversely, the correlation between comments and hashtags suggested a potentially deeper level of engagement facilitated by content categorization. These findings underscore the value of data-driven approaches in crafting effective content strategies. By leveraging insights derived from data analysis, content creators can better understand how attention flows within the social media landscape, thereby enabling them to optimize their content delivery channels for enhanced audience engagement. </p> <img class='dets_im' src='img/data/insta_metrics.png'> &nbsp Correlation matrix for various features </img></li>  <li><h5>Stock trend prediction using random-forest-classifers</h5> <p>In an endeavor to explore the application of machine learning (ML) in uncovering market dynamics, I undertook an analysis to assess the impact of volatility on modeling accuracy. This endeavor involved examining the volatility of stocks across varying timeframes, ranging from 2 days to 1000 days. By augmenting the dataset with volatility metrics, my aim was to evaluate the efficacy of a random forest classifier in predicting market trends. Volatility serves as a pivotal indicator of a stock's fluctuation magnitude over a specified period. Stocks characterized by high volatility exhibit more pronounced price fluctuations compared to their low-volatility counterparts. Volatility over various periods of time can help us understand the different scales of dynamics a particular stock may be driven by in the market.</p>        <img class='dets_im' src='img/data/volat_log.png'>Volatility over varying periods for a ticker.</img><br><p>Initially, employing only the running trend and close-ratio yielded a precision rate of 58% during backtesting. However, incorporating volatility alongside these parameters resulted in a notable improvement, elevating the precision rate to 60%. This 2% enhancement was achieved with minimal computational overhead, underscoring the efficacy of leveraging volatility metrics in refining predictive modeling strategies and capturing broader correlations.        </p>         <img class='dets_im' src='img/data/rforestcmp.png'>Random forest classifier prediction of stock trend.<br> Left: target;  Middle: just learning trends and ratios;  Right: learning volatility features.</img><br></li>    <li>  <h5>Portfolio optimisation strategies</h5><p>To comprehend the intricacies of portfolio modeling and optimization, I immersed myself in a spectrum of strategies delineated within financial literature. The primary objective of optimization revolved around maximizing Return on Investment (ROI) across diverse time frames, with a particular focus on a 100-day horizon. Utilizing ROI as a pivotal metric offers a robust framework for evaluating the growth potential of individual stocks, thereby furnishing insights into their holistic performance dynamics over time. In the optimization endeavor of a multi-asset portfolio, thorough scrutiny of the covariance matrix (returns matrix) associated with the assets ensued. Harnessing the inverse of the covariance matrix facilitated the execution of a minimum-variance strategy, aimed at mitigating portfolio risk while concurrently enhancing returns. Furthermore, leveraging the eigen-properties of the covariance matrix paved the way for deploying an eigen-strategy, thus augmenting the diversification of the optimization approach. <br>   <img class='dets_im' src='img/data/ROI.png'>&nbsp ROI over 100 days for different stocks. </img><br>Subsequent to rigorous backtesting, these optimization strategies showcased promising outcomes, yielding satisfactory returns. Moreover, during the process, I established a modular Python architecture to implement the procedure systematically, thereby ensuring flexibility for future iterations and the seamless integration of additional strategies with minimal adjustments. <img class='dets_im' src='img/data/portfolio_backtest.png'>&nbspComparison of portfolio optimization strategies.</img>   </li></ul> ";
+    var borm=`<ul> 
+    <li>
+    <h5>Complex analysis with functions!</h5>
+    <p>
+    Even simple looking functions can transition into one another so surprisingly!
+If you consider a line, then that line is well defined algebraically and unambigously as f(x)=x^1, or one of it's shifted/transformed cousin.
+Extending the representation to complex numbers, i.e. letting x take on complex values as well, gives insight as to how curves transform as the expoenent of dependence of f(x) on x changes.
+Representing f(x) in such a way is not an issue, as f(x)=x^1 is well defined on all realnumbers.
+So moving x in a complex circle just leads to an expanded circular motion of the behaviour of f(x).
+However, when we consider f(x)=x^2, which is also well-defined on all realnumbers, we see a cusp forms in f(x)'s behaviour. This is can be understood by recalling the periodicity of complex numbers in their arguments.
+Interesting 'non-analyticity' of sorts in f(x)'s behaviour emerges when the expoenent is not integer, in such cases the f(x) maybe well-defined in positive Real axis but may have complex behaviour in the negative real part. As a consequence of this, the circular behaviour of x in complex plane may give rise to changing of branch of the function and not returning back to the original point.
+    </p>
+    <br>
+    <img class='dets_im' src='img/math/analyticity_x.png'> &nbsp y=x^1</img>
+        <br>
+        <img class='dets_im' src='img/math/analyticity_x2.png'> &nbsp y=x^2</img>
+            <br>
+            <img class='dets_im' src='img/math/analyticity_x14.png'> &nbsp y=x^1.4</img>
+    </li>
+    
+    <li>
+    <h5>N-Torus?</h5>
+    
+    <p>
+    The geometrical and algebraic representation of circle is pretty well known.
+x^2 + y^2 - 1 = 0
+All others are translated and transformed cousins of this same circle.
+However other shapes aren't so well known.
+I thought I can easily give rise to geometrical representation of circle shape using the implicit algebraic knowledge i have, which should be generalisable to other shapes. I didn't want to use any reparameterisation of coordinates, and just wanted to use the plain old cartesian representation.
+	Circle:
+		Implicit equation: F(x,y)-r=0 ==> x^2 + y^2 - 1 = 0
+	Torus:
+		Implicit equation: G(x,y,z)-r=0 ==>  ?
+
+And I found a way on the great-internet to generate an implicit euqation for n-torus in a systematic way!
+An example:
+		G(x,y,z)-r= z^2 + (x(x-2)(x-1)^2+y^2)^2 -r=0
+
+The recipe suggests considering a polynomial of x  such that
+		p(x)=x(x-1)^2 (x-2)^2 .... (x-n+1)^2 (x-n)
+then the level-set of the following function would give n-torus
+		G(x,y,z)= [p(x) + y^2]^2 + z^2 -r=0
+where introduction of the third dimension is facilitated through an 'inflation' step of using an appropriate regulator 'r'.
+
+</p>
+    <br>
+    <img class='dets_im' src='img/math/torus.png'> &nbsp Torus and 2-Torus using the 'inflation' procedure.</img>
+<p>
+I tried out such an inflationary painiting of shapes for various G(x,y,z)'s. 
+Another example that looked curious and cool was the devil's curve==> y^2 (y^2 - b^2) - x^2(x^2 - a^2) =0 
+    </p>
+      <br>
+      <img class='dets_im' src='img/math/devilscurve.png'> &nbsp Devil's curve under 'inflation' procedure.</img>
+
+    </li>
+    
+    <li>
+    <h5>Integrability in dyamical systems</h5>
+    
+    <p>
+    
+
+Integrability of a system is a cruical concept in classical physics and dynamical systems. In a very broad way it tries to capture the complexity of dynamics in the system. Integrable systems are simple in that there may be description that significantly simplify the geometrical repreentation of the dyncamics. Integrable systems have a neat correspondance between their dynamic degrees-of-freedom and the aspects of system that remain invariant/conserved. 
+Typically the geometricalspace in which integrability is characterised is the construction of phase-space, which is just the collection of all possible dynamical states of a system, endowed with additional metric and structures. When the system changes it basically tranverses this phase-space. Moreover, in this space integrable systems have simple shapes describing the dynamics of system. However, breaking integrability leads to interesting shapes to emerge. Different systems can have different phase-space potraits depending on various factors in the systems. With the breaking of integrability, emergence of stochastic regions also takes place in the phase space. 
+</p>
+<br>
+<img src='img/math/integr2.png' class='dets_im'> Integrable phase structure in a classical dynamical map.</img>
+<br>
+<p>
+An example of Henon-Hales system has been shown, where initally the integrability is lightly broken, so there are non trivial shapes in the phase-potrait, but the more it gets broken the more these regions are lost to stochastic regions. This happens because the quasi-steady regions which emerge act like dynamical attractirs in phase-space, and they lose stability as non-integrability sets in. 
+
+
+    </p>
+    <br>
+    <img src='img/math/integr2(1).png' class='dets_im'></br> Integrability breaking in phase space and emergence of stochasticity.</img>
+    <br>
+    </li>
+    
+    <li>
+    <h5>Complexity of dynamical attractors: Time-delayed embedding</h5>
+    <p>
+In dynamical systems Lorenz-attractor is a famous pedagogical example of complex dynamics. It refers to a geometrical 3-d shape which resembles a butterfly's wings. It was uncovered when Lorenz investigated the dynamics of Earth's atmosphere. The associated dynamical system meaning behind it can be understood as 3 seperate degrees-of-freedoms of a system changing in a way that the tupple of their values remain on this shape, or close to it. So if we start with a system-state thats close to it but not on the shape, it'll get attracted to it and stay on the shape. These attractors carry the interdepence of the three seperate scalar variables. However, under some conditions, it is possible to reconstruct the topology of such a complex-attractor using just one of the scalar data. Such a method is called time-delay embedding.
+</p><br><img src='img/math/lorenz.png' class='dets_im'> Lorenz attractor </img><br>An example has been shown where using just X and it's time-delayed version we can reconstruct the topolgical shape of attractor X is complexy-ly tied to in (X,Y,Z) shape.
+    </p><br><img src='img/math/lorenz_scalar.png' class='dets_im'>Data of single scalar variable of the Lorenz system</img>
+ <br><img src='img/math/lorenz_timelagged.png'  class='dets_im'>Attractor from scalar time-lagged data</img>
+    </li>    <li><h5> Quantum Machine-Learning: Binary classifaction</h5>
+    <p>    Quantum computation is widely finding new theoretical usecases.     Quantum circuits have also been investigated to serve as archetectures for ML applications.     To understand how that idea might be worked out, i tried to make a binary-classifer for iris dataset using quantum-circuit. The idea was to use a quantum circuit, encode input iris parameters as      qubit-state, and then apply the circuit on it to produce a binary classifcation result.     The circuit consists of various rotations-gates, whose parameters are then classically      learnt through training using a loss-optimiser. I was able to get 78% in binary classifcation       with this procedure, which is not very ground-breaking, but serves as a proof-of-concept of potential  intersection of ML and Quatnum-computing.</p>    <br>    <img src='img/math/qcmp.png'  class='dets_im'></li>
+    
+    <li>
+    <h5>Self-organise criticality in sandpiles</h5>
+    
+    <p>
+    Abelian sandpile model is a prototypical example of self-organised-criticality in complex systems. 
+Sef-organised-criticality is the idead that in large complex systems, the dynamics can be attracted to a critical state where in a large scale spatial and temporal orchestrated 'coordination' of sorts emerges.
+Sandpile a typical example of such a model, where we drop sand particle by particle on a grid with rules for sand to spill over onto neighbours on grid. This leads to interesting patterns as sand keeps falling. Coordinated avalanches a can be observed.
+    </p>
+    <br><img src='img/math/sand_0.png' class='dets_im'></img><img src='img/math/sand_1.png' class='dets_im'></img><img src='img/math/sand_2.png' class='dets_im'>
+    </img><img src='img/math/sand_3.png' class='dets_im'></img><img src='img/math/sand_4.png' class='dets_im'>
+    Abelian sandpile model at varous time steps.</img>
+    </li>
+    </ul>`;
+    
+    var boss=`
+    <ul>
+    <li>
+    <h5></h5>
+    <p></p>
+    <br><img src='' class='dets_im' > </img>
+    </li>
+    
+
+    </ul>
+    `;
+    
+       var FULLDETAILS=["Work in progress",bods,borm,boss];
+    document.getElementById("more-dets").addEventListener("click",function(e){
+    document.getElementById("details").classList.remove("detailshide");
+    // document.getElementById("details-title").innerHTML=DATA[parseInt(document.getElementById(selected).id[1],10)]+" Stuff : ";
+    document.getElementById("details").classList.add("detailshow");
+    
+    
+    document.getElementById("details").innerHTML='<div class="details-header">'+DATA[parseInt(document.getElementById(selected).id[1],10)]+' Projects: <h4 class="details-title"></h4><button class="details-close" onclick="closedets()">&times;</button></div><div class="details-body">'+FULLDETAILS[parseInt(document.getElementById(selected).id[1],10)]+'</div>';
+     });
+     
+    
+     document.getElementById("project-details").innerHTML= DATA[parseInt(document.getElementById(selected).id[1],10)]+" Stuff : ";
+     document.getElementById("project-text").innerHTML= DETAILS[parseInt(document.getElementById(selected).id[1],10)];
+      document.getElementById("project-img").src= "img/"+IMAGES[parseInt(document.getElementById(selected).id[1],10)];
+    document.getElementById("fig-dets").innerHTML= IMGDETS[parseInt(document.getElementById(selected).id[1],10)];
+  
+        // locate your element and add the Click Event Listener
+        document.getElementById("project-list").addEventListener("click",function(e) {
+                 document.getElementById("details").classList.remove("detailshow");
+                    document.getElementById("details").classList.add("detailshide");
+                    
+            // e.target is our targetted element.
+                        // try doing console.log(e.target.nodeName), it will result LI
+            //alert(e.target.parentNode.nodeName);
+            if(e.target && e.target.parentNode.nodeName == "LI") {
+            
+            document.getElementById("project-details").innerHTML=DATA[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)]+" Stuff : ";
+                document.getElementById("project-text").innerHTML= DETAILS[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
+            document.getElementById("project-img").src= "img/"+IMAGES[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
+ document.getElementById("fig-dets").innerHTML= IMGDETS[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
+
+            document.getElementById(selected).childNodes[1].classList.remove("projsel");
+            e.target.classList.add("projsel");
+            selected=e.target.parentNode.id;
+            console.log(parseInt(document.getElementById(selected).id[1],10))
+            
+                //alert(e.target.parentNode.id + " was clicked");
+               // alert(e.target.id);
+            }
+        });
+        
+        function closedets(){
+         document.getElementById("details").classList.remove("detailshow");
+            document.getElementById("details").classList.add("detailshide");
+
+        }
+    </script>
+
+  </body>
+
+</html>
