@@ -119,6 +119,11 @@ color:white;
 text-decoration: initial;
 }
 
+.hyper{
+color:white;
+
+}
+
 .details{
 color:white;
 opacity:0;
@@ -263,6 +268,9 @@ function myFunction() {
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Projects</a>
           </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#readings">Readings</a>
+                    </li>
         </ul>
       </div>
     </nav>
@@ -490,8 +498,33 @@ function myFunction() {
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <p>My training as a physics student has made me curious and enabled me to learn about understanding various aspects of hydrodynamics,
+           dynamical systems, topology and geometry. The interplay of these domains, in problems addressing turbulence,stability analysis,
+           qualitative characterisation of dynamics (Hamiltonian physical dynamics) has been the focus of my theoretical work.
+           
+           More specifically how various fluids (and superfluids) evolve (nonlinearly) at different time & space scales, under
+           action of various forces (like gravity, Coriollis, surface tension, odd-viscocity), and the physical consequences
+           in the statistics of their associated observables. 
+           
+           I have also learnt to appreciate the ingenuity 
+           of designing analog quantum-simulators, specifically on photonic based platforms like Polaritons.  </p>
+          <p>Apart from thinking about condensed matter systems, I enjoy learning about different domains of mathematics, 
+          (for instance differential geometry, number theory and knot theory), and exploring various aspects of application and web development
+           (specifically python based services).</p>
+          <h5> How I thermalise :</h5>
+          <p class="mb-2">
+          In my relaxation phase , I could be found (no particular ordering):
+          <ul>
+          <li>Spiraling down videolists about beautiful mathematical proofs</li>
+          <li>Devouring short stories and dwelling on poems</li>
+          <li>Browsing and appreciating paintings, artworks</li>
+          <li>Trying to philosophise as much as my armchair permits
+          <br>(Expanding the armchair as much as I can)</li>
+              
+          <li>Adding new books to my to-read and old movies to my to-watch</li>
+          <li>Occasionally taking a dive or kicking a ball, and once in a while hiking a trail</li>
+          </ul>
+          </p>
         </div>
       </section> 
 
@@ -569,7 +602,7 @@ function myFunction() {
   <span class="popuptext" id="myPopup">asfasfhahsfasfasjfjsafjahsjfhajsfhsakfasfhash</span>
 </div> 
         </div>
-      </section>
+      
 
     </div>
     <div id="details" class="details">
@@ -581,6 +614,135 @@ function myFunction() {
 
     </div>
     </div>
+    </section>
+    
+    
+ <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="readings">
+   <div class="my-auto">
+     <h2 class="mb-5">Readings</h2>
+
+     <div class="resume-item d-flex flex-column flex-md-row mb-5">
+       <div class="resume-content mr-auto">
+         <div class="mb-3">Here are some curious recent resources I find insightful and interesting:</div>
+         <div>
+             <ul>
+                 <li>
+                     <h3>
+                     <a  target="_blank" rel="noopener noreferrer" href="https://www.frontiersin.org/articles/10.3389/fnsys.2018.00062/full">
+                     Wave Turbulence and Energy Cascade in the Hippocampus
+                     </a>
+                     </h3>
+                     <p>
+                     Mesoscale cortical activity refers to the coordination of large groups of neurons, resulting in patterns like
+                      traveling waves. 
+                      Understanding this collective behavior is important for grasping brain activity's cross-scale integration and cognitive
+                      emergence. To address this, they analyzed hippocampal recordings, 
+                      finding that activity dynamics become stronger and more nonlinear with increased energy input.
+                       Their findings suggest that these dynamics follow weak turbulence principles,
+                        indicating stochastic behavior and weak dissipation.They propose weak turbulence as a framework 
+                        for mesoscopic hippocampal activity, providing insights into energy exchange and phenomena like theta-gamma coupling.
+                        This highlights the ubiqutous-ness of turbulent cascades as mechanisms of optimal cross-scale integration and information transfer in nature.
+                     </p>
+                 </li>
+                 <li>
+                 <h3>
+                 
+                  <a  target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2312.10794.pdf">
+                 A Mathematical perspective on Transformers
+                  </a>
+                 </h3>
+                 
+                 <p>
+                 This paper delves into the mathematical underpinnings of Transformer neural network architectures, 
+                 particularly focusing on their representation as flow maps on probability measure spaces.
+                  It outlines a simplified model capturing key Transformer components like self-attention and layer-normalization, 
+                  analyzing their behavior through clustering and posing open research questions. 
+                  Additionally, it explores the infinite-width limit of Transformers, discussing their approximation properties and 
+                  training dynamics, while proposing a surrogate model for their dynamics on the unit sphere,
+                   described as a Wasserstein gradient flow for interaction energy.
+                   This perspective suggests that action of a transformer (during inference or training) can be viewed as an abstract mathematical object,
+                   formally called vector bundle. These bundles are a central concept in differential geometry and physics.
+                   Such parallels are curious and may help uncover the black-box-ness of neural networks.
+                 </p>
+                 
+                 </li>
+                 
+                 <li>
+                 <h3>
+                 
+                  <a  target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/10.1145/3306346.3322962">
+                 On bubble rings and ink chandeliers
+                  </a>
+                 </h3>
+                 
+                 <p>
+      This paper introduces a novel model for simulating variable thickness vortex filaments in viscous fluids, 
+      offering insights into phenomena like bubble rings and ink chandeliers. By decoupling linear and rotational energy 
+      components and considering dissipative drag and buoyancy, the model accurately captures the intricate dynamics of these filaments. 
+      Utilizing equations derived from Newtonian dynamics and geodesic motion on a Riemannian manifold, the study elucidates the evolution
+       of filament geometry, curvature, and circulation. Through numerical simulations based on the Cauchy formulation of Euler equations,
+        the model's efficacy is demonstrated, aligning well with experimental observations. This differential geometry ('bundle' based) approach 
+        suggests that the 'behaviour' of vortex rings (specifically their thickness) has similar behaviour as Buurger's equation, which can also be viewed as a general class of interface growth patterns[1].
+                A demo of the said 'ink-chandeliers' can be found <a href="https://www.youtube.com/watch?v=7Kzwa1gCpHg&ab_channel=JensNiemeyer" target="_blank">HERE.</a>
+                 </p>
+                 <p>
+                 [1]<a target="_blank" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.56.889">Mehran Kardar, et al, Phys. Rev. Lett. 56, 889</a>
+                 </p>
+                 
+                 </li>
+                 
+                                  <li>
+                                  <h3>
+                                  
+                                   <a  target="_blank" rel="noopener noreferrer" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.084001">
+                                 Probing Hydrodynamic Fluctuation-Induced Forces with an Oscillating Robot
+                                   </a>
+                                  </h3>
+                                  
+                                  <p>
+            A novel robot demonstrates the ability to navigate through water by generating surface waves and interacting with nearby
+             boundaries. When generating monochromatic waves, the robot exploits the asymmetry of the wave field caused by reflection 
+             from a boundary to propel itself forward. This propulsion mechanism relies on fluctuation-induced forces within the wave field,
+              where the distance between the robot and the boundary determines the strength and direction of the force. 
+              The interaction between the robot's vibrations and the surrounding fluid produces surface currents, whose magnitude
+               varies with the vibration frequency. A simplified force model predicts the robot's motion in response to attraction, 
+               offering insights into its dynamics near boundaries. This study suggests the existence of transition dynamics
+                between symmetric and asymmetric regimes, indicating potential applications in controlled navigation.    </p>
+                                 
+                                  
+                                  </li>
+                                  
+                                  <li>
+                                  <h3>
+                                  
+                                   <a  target="_blank" rel="noopener noreferrer" 
+                                   href="https://www.biorxiv.org/content/10.1101/2023.11.06.565918v2">
+                                Arousal as a universal embedding for spatiotemporal brain dynamics
+                                   </a>
+                                  </h3>
+                                  
+                                  <p>
+ Arousal, the state of being awake and alert, is influenced by various factors like the sleep-wake cycle and stress.
+  This study explored how arousal impacts brain activity in awake mice. It was found that arousal plays a crucial role in organizing 
+  brain function, as it can accurately predict changes in brain dynamics over time. 
+  By measuring pupil size or using a single principal component, they were able to reconstruct complex brain activity patterns, 
+  suggesting that arousal serves as a key organizing principle for brain function. 
+  This framework offers insights into how arousal dynamics synchronize with brain activity, impacting physiological processes 
+  across the brain. Furthermore, it suggests a unified approach to interpreting diverse physiological measurements, 
+  offering a deeper understanding of the relationship between arousal and brain function. 
+  The ingenious use of dynamical systems and encoder-decoder architecture to unify and find a common 'embedding' ground for mutimodal sense-data in organism can be insightful for understading not only human cognition but also possibly inform design of novel neural network architectures.    </p>
+                                 
+                                  
+                                  </li>
+             </ul>
+         </div>
+       </div>
+     </div>
+
+
+
+   </div>
+ </section>
     
 
     <!-- Bootstrap core JavaScript -->
@@ -686,7 +848,7 @@ Integrability of a system is a cruical concept in classical physics and dynamica
 Typically the geometricalspace in which integrability is characterised is the construction of phase-space, which is just the collection of all possible dynamical states of a system, endowed with additional metric and structures. When the system changes it basically tranverses this phase-space. Moreover, in this space integrable systems have simple shapes describing the dynamics of system. However, breaking integrability leads to interesting shapes to emerge. Different systems can have different phase-space potraits depending on various factors in the systems. With the breaking of integrability, emergence of stochastic regions also takes place in the phase space. 
 </p>
 <br>
-<img src='img/math/integr2.png' class='dets_im'> Integrable phase structure in a classical dynamical map.</img>
+<img src='img/math/integr2.png' class='dets_im'> Quasi-integrable phase structure in a classical dynamical map.</img>
 <br>
 <p>
 An example of Henon-Hales system has been shown, where initally the integrability is lightly broken, so there are non trivial shapes in the phase-potrait, but the more it gets broken the more these regions are lost to stochastic regions. This happens because the quasi-steady regions which emerge act like dynamical attractirs in phase-space, and they lose stability as non-integrability sets in. 
@@ -725,16 +887,149 @@ Sandpile a typical example of such a model, where we drop sand particle by parti
     var boss=`
     <ul>
     <li>
-    <h5></h5>
-    <p></p>
-    <br><img src='' class='dets_im' > </img>
+    <h5>Document summariser</h5>
+    <p>A mobile internet service to upload any document and generate summary page by page. Simple RAG implementeation, for a proof of concept service.
+    Check it out <a class="hyper"  href="https://docsumm.streamlit.app/" target="_blank">HERE</a></p>
+   
     </li>
+    <li><h6>More details available on github profile.</h6></li>
     
 
     </ul>
     `;
     
-       var FULLDETAILS=["Work in progress",bods,borm,boss];
+    var boap=`
+    <ul> 
+    <li>
+    <h4>Nonlinear entanglement and tunneling dynamics in quantum kicked top</h4>
+    <p>
+  The kicked top model stands as a fundamental tool for probing unresolved quantum mechanical phenomena vis-à-vis classical formulations. 
+  In its classical rendition, this model unveils a rich tapestry of dynamics, encompassing regular, bifurcated, mixed, and chaotic behaviors. 
+  Our investigation, prompted by prior research[1], delves into the deep quantum realm, where correlations between the classical phase space structure and entanglement dynamics have been scrutinized. Notably, we unveil a striking symmetry connection between the variations in entanglement and classical dynamics, particularly delineating the boundaries of high and low entanglement regions in phase space. Focusing on the entangling quantum kicked top, we narrow our gaze to the few qubit scenario, exploring the nuanced interplay between entanglement and spin-coherent states' initial conditions. Our analysis extends prior findings on tunneling behavior, establishing a clear nexus between entanglement dynamics and tunneling phenomena. Moreover, we elucidate the relationship between classical phase space structures and the initial condition dependence of entanglement oscillations, even in the quantum domain of a few spin-1/2 qubits. Additionally, we delve into the correlations between spectral features and these non-classical dynamics, shedding light on the intricate fabric of quantum entanglement.
+   </p>
+   <p>
+  [1] J. B. Ruebeck, J. Lin, and A. K. Pattanayak, Phys. Rev. E 95, 062222 (2017).
+
+   </p>
+    <br>
+    <img class='dets_im' src='img/acad/tunnel.png'> &nbsp Dynamical tunneling in quantum kicked-top</img>
+        <br>
+         <img class='dets_im' src='img/acad/tunnel2.png'> &nbsp Entanglement oscillation (as measured by entropy) associated with dynamical tunneling.</img>
+             <br>
+    <h5>MORE INFO: &nbsp &nbsp<a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR24/Session/N00.217" > LINK</a></h5>
+       <br>
+       <br>
+    </li>
+    
+    <li>
+    <h4>Generation of coherence in an exactly solvable nonlinear nanomechanical system</h4>
+    <p>
+This research investigated the quantum dynamics of a nitrogen-vacancy (NV) center interacting with a nonlinear, periodically driven mechanical oscillator. The mechanical oscillation, influenced by continuous periodic driving contingent upon the oscillator's position, was mathematically described using Mathieu elliptic functions. This framework enabled the analysis of quantum spin dynamics, incorporating environmental factors, and assessing the purity and von Neumann entropy of the NV-spin system. The study addressed the unitary generation of coherence, observing that coherence production via unitary transformation differed based on the system's initial state. Efficiency in coherence production was noted when the system began in the separatrix region, associated with classical dynamical chaos. Leveraging insights from chaos theory, it was demonstrated that quantum chaos and the loss of information about the initial mixed state favored quantum coherence generation. Introducing a quantum distance metric from the homoclinic tangle, it was established that for initial states conducive to efficient coherence generation, this distance was minimized.   </p>
+
+  </p>  <br>
+    <img class='dets_im' src='img/acad/purity.png'> &nbsp Purity (as a measure of coherence) evolution in time (under open dynamics), showing enhancement even in presence of reservoir and decoherence</img>
+        <br>
+        
+    <h5>MORE INFO: &nbsp &nbsp<a class='hyper' target="_blank" rel="noopener noreferrer" href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.104311" > LINK</a></h5>
+       <br>
+       <br>
+    </li>
+    
+        
+    <li>
+    <h4>Modulation instability in parity broken matter</h4>
+    <p>
+The phenomenon of Modulation Instability (MI) is pervasive in nature, appearing in various systems such as water waves and lasers, 
+albeit under different names. In this study, we delved into the interaction between MI and parity breaking, particularly odd-viscosity effects,
+ within a hydrodynamic framework of surface gravity waves. By employing a power counting scheme and utilizing derivative expansion techniques, 
+ we derived a generalized nonlinear Schrödinger equation (NLSE) incorporating odd-viscosity-dependent stability criteria
+  for amplitude modulation. Our analysis revealed that parity breaking induced asymmetric dispersion,
+   leading to distinct stability criteria for left and right moving modes of the NLSE. We examined the growth rate dependence on 
+   odd-viscosity and tried to contrast its impact with that of surface tension. We also explored the feasibility 
+   of realizing a non-reciprocal optical platform based on the parity odd generalized NLSE derived in the context of surface gravity waves.
+  </p>  <br>
+    <img class='dets_im' src='img/acad/modu.png'> &nbsp MI leads to breaking of wave-train into smaller ones (as shown), as was first recorded and
+     studied in[1].
+    
+    </img>
+      <br>
+      <p>[1] Benjamin, T.B. (1967). Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences. 299 (1456): 59–76. </p>
+        
+    <h5>MORE INFO: &nbsp &nbsp
+    
+    <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR22/Session/Q11.6" > LINK1</a>
+,
+  <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR23/Session/Z66.7" > LINK2</a>
+    
+    </h5>
+    (Arxiv preprint link to be updated)
+    <br>
+    <br>
+    </li>
+    
+   
+       <li><h4>Polariton based condensed matter quantum simulator</h4>
+       <p>
+  Polaritons, which are a hybrid state of light and matter, have garnered attention as a promising platform for quantum simulators. 
+  These quasi-particles possess both light and matter properties, making them well-suited for studying complex quantum phenomena. 
+  By manipulating the interactions between polaritons, it is possible to create artificial quantum systems that exhibit behaviors
+   similar to those seen in condensed matter physics. We collaborated with experimental group to use polaritons and work out lattice tight-binding models of condensed matter.
+   These were meant to be used as proof of concept application of the platform for studying physics (like transport of electron in lattice), at room temperature.
+   We were able come up with protocol to use the platform and model physics of Graphene band-structure and also localisation physics of a Generalised Aubry-André (GAA)[1].
+  </p>
+  <p>[1]Fangzhao Alex An, etal. Phys. Rev. Lett. 126, 040603</p>
+       <br>
+       <img class='dets_im' src='img/acad/NL_AA.png'> </img>   <br>Polariton based photonic cavity implementing GAA model,
+       simulating the physics of localisation, specifically the aspect of mobility-edge.
+      
+         <br>
+       
+       <h5>MORE INFO: &nbsp &nbsp
+       
+       <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR23/Session/T65.1" > LINK1</a>
+
+       </h5>
+       (Arxiv preprint link to be updated)
+           <br>
+           <br>
+       </li>
+    
+    
+           <li><h4>Turbulent wave cascades in parity broken matter</h4>
+           <p>
+     The concept of turbulent wave cascades is fundamental in elucidating the intricate dynamics of turbulent flows and their possible correlation 
+   with or deviation from thermalization. 
+   Turbulent wave cascades entail the transfer of energy from large-scale eddies to small-scale eddies within a turbulent flow. 
+   This phenomenon occurs through both inverse and direct cascades. 
+   In an inverse cascade, energy moves from smaller-scale eddies to larger ones, resulting in an accumulation of energy at larger scales 
+   and a redistribution towards lower wavenumbers. Conversely, in a direct cascade, energy transfers from larger-scale eddies to smaller ones, 
+   leading to energy dissipation at smaller scales.
+    Understanding turbulent wave cascades is pivotal across various domains, including fluid dynamics, atmospheric science, and oceanography. 
+    By examining the mechanisms governing wave cascades, it gives insights into energy transfer and dissipation processes in turbulent flows, 
+    thus enhancing the accuracy of numerical models and predictive capabilities in turbulent systems.
+    We are investigating how cascades get deformed in parity broken wave systems.
+          </p>
+    
+           <br>
+           <img class='dets_im' src='img/acad/dualcascade.png'> </img>   <br>Example of power spectrum of a wave system in the dual cascade regime.
+           <br> <img class='dets_im' src='img/acad/cascadesf.png'> </img>   <br>Deformation of direct cascade with variation of dispersion
+          <br> <img class='dets_im' src='img/acad/thermalisationcasc.png'> </img>   <br>Example of Thermalisation of a perturbed thermal equibrium.
+             <br>
+           
+           <h5>MORE INFO:    (Ongoing; In preparation)
+
+           </h5>
+        
+               <br>
+               <br>
+           </li>
+
+</ul>
+        
+    
+    `;
+    
+       var FULLDETAILS=[boap,bods,borm,boss];
     document.getElementById("more-dets").addEventListener("click",function(e){
     document.getElementById("details").classList.remove("detailshide");
     // document.getElementById("details-title").innerHTML=DATA[parseInt(document.getElementById(selected).id[1],10)]+" Stuff : ";
