@@ -3,6 +3,11 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+ 
+ /*
+ #BD5D38 ---> #6a966c
+ #824027 ---> #467c48
+ */
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
@@ -40,14 +45,14 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #BD5D38; }
+    color: /*#BD5D38*/ #6a966c; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #BD5D38; }
+    color: /*#BD5D38*/#6a966c; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -104,12 +109,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  background-color: /*#BD5D38*/ #6a966c !important; }
 
 .text-primary {
-  color: #BD5D38 !important; }
+  color: /*#BD5D38*/#6a966c !important; }
 
 a {
-  color: #BD5D38; }
+  color:/* #BD5D38*/ #6a966c; }
   a:hover, a:focus, a:active {
-    color: #824027; }
+    color: #467c48; }
