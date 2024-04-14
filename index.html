@@ -114,6 +114,7 @@ left:25%;
    cursor:pointer;
    color:/*#bd5d38*/#6a966c;
    
+   
 }
 #more-dets:hover{
 background-color:/*#bd5d38*/#6a966c;
@@ -139,6 +140,8 @@ z-index:-10;
 visbility:hidden;
 //border:1px solid /*#bd5d38*/#6a966c;
 display:block;
+  border: 0px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
 
 }
 
@@ -159,18 +162,53 @@ font-size:35px;
 font-family: 'Saira Extra Condensed',serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40
+  color: #343a40;
+    border: 0px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
 }
 .details-close{
 position:absolute;
 top:0%;
-left:100%;
+left:101%;
+
+  appearance: none;
+  background-color:#6a966c;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #343a40;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  height:51px;
 }
+
+.details-close:hover{
+  background-color: #467c48;
+  color:white;
+}
+
 .details-body{
 background-color:/*#bd5d38*/#6a966c ;
 width:100%;
 height:100%;
 overflow-y: auto;
+  border: 0px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+ 
 }
 .dets_im{
 width:230px;
@@ -1047,6 +1085,41 @@ albeit under different names. In this study, we delved into the interaction betw
       "theme": "prism",
       "themeColor": "#2563eb"
   });
+ 
+</script>
+<script>
+ window.botpressWebChat.onEvent(
+  (event) => {
+    if (event.type === 'MESSAGE.RECEIVED') {
+    
+    
+        try{
+        
+        var bas=event.value.payload.text;
+        bas=bas.replace("RESPONSE :","");
+        bas=bas.replace(" NOTE: ( Chatbot is in testing: if you run into a bug it'll be great if you inform Sudheesh! If you want to clarify or report any discripenacy you can contact Sudheesh directly.)","");
+        console.log(bas);
+        
+        if ('speechSynthesis' in window) {
+ // Speech Synthesis supported 🎉
+ var msg = new SpeechSynthesisUtterance();
+msg.text = bas;
+msg.volume=0.2;
+window.speechSynthesis.speak(msg);
+
+}else{
+  // Speech Synthesis Not Supported 😣
+  console.log("Sorry, your browser doesn't support text to speech!");
+}
+
+
+        }
+        catch(err){console.log("ERROR");}
+    
+    }
+  },
+  ['MESSAGE.RECEIVED']
+)
 </script>
   </body>
 
