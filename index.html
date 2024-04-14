@@ -59,7 +59,38 @@ position:relative;
 
 }
 
+.cycle{
+background-color:#6a966c;
+width:wrap-content;
+height:25px;
+position:relative;
+left:13%;
+top:10%;
+font-size:8px;
+  appearance: none;
+  background-color:#6a966c;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #343a40;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  
 
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.cycle:hover{
+  background-color: #467c48;
+  color:white;
+}
 #project-details{
 position:relative;
 padding-top:25px;
@@ -483,8 +514,11 @@ function myFunction() {
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-      
+      <br>
+       
+        
  <ul class="list-inline list-icons" id="project-list">
+
                    <li class="list-inline-item" id="p0">
                      <img src="img/acad.png" class= "proj projsel"> </img>
                    </li>
@@ -501,9 +535,13 @@ function myFunction() {
                </li>
 
 
-</ul>
+</ul> 
 <div class="projdets" >
 <h3 id="project-details"></h3>
+
+
+<button class="cycle" onclick="cycleproj()">(CHANGE)</button>
+
 <p id="project-text"></p>
 <div>
 <figure class="project-fig">
@@ -715,6 +753,7 @@ function myFunction() {
     
     <script type="text/javascript">
     var selected="p0";
+    var tprojs=["p0","p1","p2",,"p3"];
     var DATA=["Academic", "Data-Science", "Math","Software"];
     var DETAILS=[
     //"Through my research in various physical systems, I have improved my understainng of how mathematical modelling helps us understand physical aspects of reality, and consqeutnly the physical behaviur of different contexts. I have explored physics in the following domains in varying extents. I have worked on modelling theoretical quantum-sensors by utilising the nanomechanical properties of resonators, wherein the 'chaotic' dynamics of an oscillating nanomechanical beam enhances the coherence between two 'qubits' (the analogue of classical bit for quantum-computation).   I have worked on investigating the properties of fluids which have additional 'active' response to strain, through nontrivial stress geometry of the system; This gives rise to novel physics, which can be squared neatly with the physical intuition, giving some insights into self-organisation in different systems. I have also worked on designing cavity-polariton based quantum-simulator of models used in condensed matter. These designs are used to understand properties (like electrical transport in media) using photons.    ",
@@ -1034,6 +1073,7 @@ albeit under different names. In this study, we delved into the interaction betw
   
         // locate your element and add the Click Event Listener
         document.getElementById("project-list").addEventListener("click",function(e) {
+        //console.log(e);
                  document.getElementById("details").classList.remove("detailshow");
                     document.getElementById("details").classList.add("detailshide");
                     
@@ -1061,6 +1101,46 @@ albeit under different names. In this study, we delved into the interaction betw
          document.getElementById("details").classList.remove("detailshow");
             document.getElementById("details").classList.add("detailshide");
 
+        }
+        
+        function cycleproj(){
+       // console.log(document.getElementById(selected).id)
+       var newp,ch;
+       switch(selected){
+       case "p0":
+        newp="p1"
+        ch=1;
+        break;
+    case "p1":
+    newp="p2"
+    ch=2;
+    break;
+    case "p2":
+    newp="p3"
+    ch=3;
+    break;
+    case "p3":
+    newp="p0"
+    ch=0;
+    break;
+    default:
+    break;  
+       }
+       
+ document.getElementById("details").classList.remove("detailshow");
+                   document.getElementById("details").classList.add("detailshide");
+                   
+           
+           document.getElementById("project-details").innerHTML=DATA[ch]+" Stuff : ";
+               document.getElementById("project-text").innerHTML= DETAILS[ch];
+           document.getElementById("project-img").src= "img/"+IMAGES[ch];
+document.getElementById("fig-dets").innerHTML= IMGDETS[ch];
+
+           document.getElementById(selected).childNodes[1].classList.remove("projsel");
+            document.getElementById(newp).childNodes[1].classList.add("projsel");
+           selected=newp;
+
+           
         }
     </script>
    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
