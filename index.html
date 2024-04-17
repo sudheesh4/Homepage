@@ -64,16 +64,17 @@ background-color:#6a966c;
 width:wrap-content;
 height:25px;
 position:relative;
-left:13%;
+left:7%;
 top:10%;
-font-size:8px;
+font-size:10px;
+font-weight:600;
   appearance: none;
   background-color:#6a966c;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
   box-sizing: border-box;
-  color: #343a40;
+  color:white;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
@@ -88,8 +89,8 @@ font-size:8px;
   white-space: nowrap;
 }
 .cycle:hover{
-  background-color: #467c48;
-  color:white;
+  background-color:#343a40; 
+  //color: #467c48;
 }
 #project-details{
 position:relative;
@@ -135,23 +136,87 @@ width:150px;
    font-size:10px;
 }
 
-#more-dets{
-position:absolute;
-top:100%;
-left:25%;
 
+
+#more-dets{
+//position:absolute;
+//top:100%;
+//left:38%;
+background-color:#6a966c;
    font-size:12px;
-   text-decoration: underline;
+   //text-decoration: underline;
    cursor:pointer;
-   color:/*#bd5d38*/#6a966c;
-   
-   
+     border: 0px solid rgba(27, 31, 35, .15);
+     border-radius: 3px;
+     padding:5px;
+     color:white;//#6a966c;
 }
 #more-dets:hover{
-background-color:/*#bd5d38*/#6a966c;
+background-color:#343a40;
 color:white;
 text-decoration: initial;
 }
+
+#more-read{
+//position:absolute;
+//top:100%;
+//left:30%;
+//background-color:#6a966c;
+   font-size:12px;
+   //text-decoration: underline;
+   cursor:pointer;
+     border: 0px solid rgba(27, 31, 35, .15);
+     border-radius: 3px;
+     padding:5px;
+     color:white;//#6a966c;
+}
+#more-read:hover{
+background-color:#343a40;
+color:white;
+text-decoration: initial;
+}
+
+#TLDR{
+//position:absolute;
+//top:100%;
+//left:25%;
+//background-color:#6a966c;
+   font-size:12px;
+   //text-decoration: underline;
+   cursor:pointer;
+     border: 0px solid rgba(27, 31, 35, .15);
+     border-radius: 3px;
+     padding:5px;
+     color:white;//#6a966c;
+}
+#TLDR:hover{
+background-color:#343a40;
+color:white;
+text-decoration: initial;
+}
+
+.selectedmode{
+background-color:#343a40;
+}
+
+.unselectedmode{
+background-color:#6a966c;
+}
+
+
+#nvouter
+{
+    width:100%;
+    text-align: center;
+padding:13px;
+}
+.nvinner
+{
+    display: inline-block;
+}
+
+
+
 
 .hyper{
 color:white;
@@ -208,7 +273,7 @@ left:101%;
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
   box-sizing: border-box;
-  color: #343a40;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
@@ -228,7 +293,7 @@ left:101%;
 }
 
 .details-close:hover{
-  background-color: #467c48;
+  background-color: #343a40;//#467c48;
   color:white;
 }
 
@@ -537,14 +602,22 @@ function myFunction() {
 
 </ul> 
 <div class="projdets" >
-<h3 id="project-details"></h3>
+
+<h3 id="project-details">
+</h3>
+<button class="cycle" onclick="cycleproj()">(CLICK TO CHANGE)</button>
 
 
-<button class="cycle" onclick="cycleproj()">(CHANGE)</button>
 
 <p id="project-text"></p>
+<div id="nvouter">
+        <div class="nvinner selectedmode" id="TLDR">TL;DR</div>
+        <div  id="more-read" class="nvinner unselectedmode">READ MORE</div>
+        <div class="nvinner" id="more-dets">DETAILS</div>
+</div> 
 <div>
 <figure class="project-fig">
+<h5 style="position:absolute;left:25%;">Sample:</h5>
 <img id="project-img">
 <div id="fig-dets">
  
@@ -553,9 +626,20 @@ function myFunction() {
 </figure>
 
 </div>
-<div id="more-dets">
- Read More
+
+<div>
+  <!--  <div id="TLDR">
+     TLDR
+    </div>
+    <div id="more-read">
+    Read More
+    </div>
+    <div id="more-dets">
+     More Details
+    </div>-->
 </div>
+
+
 
 </div>
 
@@ -625,7 +709,7 @@ function myFunction() {
                  <li>
                      <h3>
                      <a  target="_blank" rel="noopener noreferrer" href="https://www.frontiersin.org/articles/10.3389/fnsys.2018.00062/full">
-                     Wave Turbulence and Energy Cascade in the Hippocampus
+                    <u> Wave Turbulence and Energy Cascade in the Hippocampus</u>
                      </a>
                      </h3>
                      <p>
@@ -644,7 +728,7 @@ function myFunction() {
                  <h3>
                  
                   <a  target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2312.10794.pdf">
-                 A Mathematical perspective on Transformers
+                <u> A Mathematical perspective on Transformers</u>
                   </a>
                  </h3>
                  
@@ -667,7 +751,7 @@ function myFunction() {
                  <h3>
                  
                   <a  target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/10.1145/3306346.3322962">
-                 On bubble rings and ink chandeliers
+            <u>     On bubble rings and ink chandeliers</u>
                   </a>
                  </h3>
                  
@@ -691,8 +775,8 @@ function myFunction() {
                                   <h3>
                                   
                                    <a  target="_blank" rel="noopener noreferrer" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.084001">
-                                 Probing Hydrodynamic Fluctuation-Induced Forces with an Oscillating Robot
-                                   </a>
+                           <u>      Probing Hydrodynamic Fluctuation-Induced Forces with an Oscillating Robot
+                              </u>     </a>
                                   </h3>
                                   
                                   <p>
@@ -713,8 +797,8 @@ function myFunction() {
                                   
                                    <a  target="_blank" rel="noopener noreferrer" 
                                    href="https://www.biorxiv.org/content/10.1101/2023.11.06.565918v2">
-                                Arousal as a universal embedding for spatiotemporal brain dynamics
-                                   </a>
+                               <u> Arousal as a universal embedding for spatiotemporal brain dynamics
+                                </u>   </a>
                                   </h3>
                                   
                                   <p>
@@ -764,7 +848,26 @@ function myFunction() {
    // "Creating softwares and small applications for personal use-cases, has informed my design sensibilities specifically, and system-thinking in general. I have primarily worked on applications based on python, for abput 10 years. I have employed various services (APIs and third-party modules) to implement different techniques like web-scraping, scietific-computation, network communication. Over the years working on these projects has helped me improve my own programming practices as well, for instance improving data-management in complex modules, optimising code by breaking it into modular pieces, improving documentaion and adhering to conventions of coding. I have also worked in web-development which has familiarised me with the approaches used to design user-interfaces. I have worked with technologies like REACT.JS, REDUX. I understand the software-development cycle and am reasonably familiar with testing and debugging that goes into pre-production release.  ",
    "Over the past decade, my experience in software development, primarily focused on Python, has honed my design sensibilities and system-thinking skills. I've leveraged various services such as APIs and third-party modules to implement diverse techniques like web-scraping, scientific computation, and network communication. Throughout these projects, I've refined my programming practices, including data management, modular code design, documentation, and adherence to coding conventions. Additionally, my involvement in web development, utilizing technologies like React.js and Redux, has deepened my understanding of user interface design. Familiarity with the software development lifecycle, along with testing and debugging methodologies, rounds out my skill set for efficient pre-production release."
    ];
-    
+    var DETAILS2=[
+    [["Nonlinear entanglement dynamics","Explored the quantum realm of the kicked top model, revealing a symmetry connection between entanglement and classical dynamics."],
+    ["Generation of coherence in an exactly solvable nonlinear system, involving a nitrogen-vacancy (NV) center interacting with a nanomechanical oscillator."],
+    ["Broken parity physics","Modulation instability in parity broken fluids and dielectrics",
+    "Studied wave cascades in turbulent flows. Investigated energy transfer mechanisms through inverse and direct cascades.",],
+    ["Polariton based condensed matter quantum simulator","Explored polaritons as a platform for quantum simulators."]],
+    [["Segmentation analysis","Conducted analytical investigation using a publicly available dataset from a supermarket to discern transactional trends and insights into revenue streams."],
+    ["Feature correlations and selection","Examined correlations between different post metrics of an Instagram account to uncover user engagement behaviors."],["Stock trend analysis. Assessed the impact of volatility on modeling accuracy in predicting stock market trends."],
+    ["Portfolio optimization strategies.","Explored portfolio modeling and optimization strategies focusing on maximizing Return on Investment (ROI)."]
+    ],
+    [//["Complex and real analysis of functions","Explored the geometrical and algebraic representation of shapes, specifically focusing on the circle and torus."],
+    ["Dynamical systems","Studied the simplicity of integrable systems in phase-space and the emergence of stochastic regions with breaking integrability.","Complexity of dynamical attractors using Time-delayed embedding.","Investigated the Abelian sandpile model as an example of self-organized criticality in complex systems."],
+    ["Explored the intersection of quantum computing and machine learning by implementing a binary classifier for the iris dataset using a quantum circuit."],
+    ["And others!"]],
+    [["Familiar with web-scraping, scientific-computation and application development. Primarily comfortable with python."],
+    ["Experience with web-development and AGILE based software-engineering methodology."],
+    ["Implemented (RAG based) LLM integrated services."],
+    [" For more information  : <a  href='https://github.com/sudheesh4'><b>github/@sudheesh4</b></a>."],
+    ]
+    ];
     var IMAGES=["NL_AA.png","portfolio_backtest.png","qcmp.png","docquiz.png"];
     
     var IMGDETS=["Cavity-Polariton based quantum-simulator benchmarking.",
@@ -774,7 +877,22 @@ function myFunction() {
     ];
     
     
+    function getdetlist(x){
+    var ll="<ul> ";
+    for(var i=0;i<DETAILS2[x].length;i++)
+    {
+    var temp="<ul>";
+    for(var j=1;j<DETAILS2[x][i].length;j++)
+        {
+        temp=temp+"<li>"+DETAILS2[x][i][j]+"</li>";
+        }
+        temp=temp+"</ul>";
+        ll=ll+"<li>"+DETAILS2[x][i][0]+temp+"</li>";
+    }
+    ll=ll+"</ul>";
+    return ll
     
+    }
     
     
 
@@ -1065,9 +1183,31 @@ albeit under different names. In this study, we delved into the interaction betw
     document.getElementById("details").innerHTML='<div class="details-header">'+DATA[parseInt(document.getElementById(selected).id[1],10)]+' Projects: <h4 class="details-title"></h4><button class="details-close" onclick="closedets()">&times;</button></div><div class="details-body">'+FULLDETAILS[parseInt(document.getElementById(selected).id[1],10)]+'</div>';
      });
      
+     
+     function customtoggle(c1,c2){//c1 ==>unselected, c2==>selected
+         
+    document.getElementById(c1).classList.remove("selectedmode");
+    document.getElementById(c1).classList.add("unselectedmode");
+    document.getElementById(c2).classList.remove("unselectedmode");
+    document.getElementById(c2).classList.add("selectedmode");
+     }
+     
+    document.getElementById("more-read").addEventListener("click",function(e){
+    
+    customtoggle("TLDR","more-read");    
+     document.getElementById("project-text").innerHTML= DETAILS[parseInt(document.getElementById(selected).id[1],10)];
+    });
+    
+    document.getElementById("TLDR").addEventListener("click",function(e){
+
+    customtoggle("more-read","TLDR");    
+     document.getElementById("project-text").innerHTML= getdetlist(parseInt(document.getElementById(selected).id[1],10));
+    });
+    
+    
     
      document.getElementById("project-details").innerHTML= DATA[parseInt(document.getElementById(selected).id[1],10)]+" Stuff : ";
-     document.getElementById("project-text").innerHTML= DETAILS[parseInt(document.getElementById(selected).id[1],10)];
+     document.getElementById("project-text").innerHTML= getdetlist(parseInt(document.getElementById(selected).id[1],10));//DETAILS[parseInt(document.getElementById(selected).id[1],10)];
       document.getElementById("project-img").src= "img/"+IMAGES[parseInt(document.getElementById(selected).id[1],10)];
     document.getElementById("fig-dets").innerHTML= IMGDETS[parseInt(document.getElementById(selected).id[1],10)];
   
@@ -1083,14 +1223,15 @@ albeit under different names. In this study, we delved into the interaction betw
             if(e.target && e.target.parentNode.nodeName == "LI") {
             
             document.getElementById("project-details").innerHTML=DATA[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)]+" Stuff : ";
-                document.getElementById("project-text").innerHTML= DETAILS[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
+                customtoggle("more-read","TLDR");   
+                document.getElementById("project-text").innerHTML= getdetlist(parseInt(document.getElementById(e.target.parentNode.id).id[1],10));//DETAILS[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
             document.getElementById("project-img").src= "img/"+IMAGES[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
  document.getElementById("fig-dets").innerHTML= IMGDETS[parseInt(document.getElementById(e.target.parentNode.id).id[1],10)];
 
             document.getElementById(selected).childNodes[1].classList.remove("projsel");
             e.target.classList.add("projsel");
             selected=e.target.parentNode.id;
-            console.log(parseInt(document.getElementById(selected).id[1],10))
+            //console.log(parseInt(document.getElementById(selected).id[1],10))
             
                 //alert(e.target.parentNode.id + " was clicked");
                // alert(e.target.id);
@@ -1132,7 +1273,8 @@ albeit under different names. In this study, we delved into the interaction betw
                    
            
            document.getElementById("project-details").innerHTML=DATA[ch]+" Stuff : ";
-               document.getElementById("project-text").innerHTML= DETAILS[ch];
+            customtoggle("more-read","TLDR"); 
+               document.getElementById("project-text").innerHTML= getdetlist(ch);//DETAILS[ch];
            document.getElementById("project-img").src= "img/"+IMAGES[ch];
 document.getElementById("fig-dets").innerHTML= IMGDETS[ch];
 
