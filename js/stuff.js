@@ -27,7 +27,7 @@
     ["And others!"]],
     [["Familiar with web-scraping, scientific-computation and application development. Primarily comfortable with python."],
     ["Experience with web-development and AGILE based software-engineering methodology."],
-    ["Implemented (RAG based) LLM integrated services."],
+    ["Implemented (RAG based) LLM integrated services. ('Chat-with-a-philosopher' , 'Document quiz-feedback'...) "],
     [" For more information  : <a  href='https://github.com/sudheesh4'><b>github/@sudheesh4</b></a>."],
     ]
     ];
@@ -167,12 +167,20 @@ Sandpile a typical example of such a model, where we drop sand particle by parti
     var boss=`
     <ul>
     <li>
+    <h5>Chat-with-a-philosopher</h5>
+    <p>
+    Collated high quality and factually associated data about some curious thinkers.
+     Organised data, along with meta-information into relevant vector-database which was used to power a chatbot.
+     Also extended it by finetuning a 7B variant of Llama2 to improve 'in-database' performance.
+    </p>
+    </li>
+    <li>
     <h5>Document summariser</h5>
     <p>A mobile internet service to upload any document and generate summary page by page. Simple RAG implementeation, for a proof of concept service.
     Check it out <a class="hyper"  href="https://docsumm.streamlit.app/" target="_blank"><b><u>HERE</u></b></a></p>
    
     </li>
-    <li><h6>Trivial recreations:</h6>
+    <li><h5>(Almost) trivial recreations:</h6>
         <p>I tried to generate a rap to keep convey this part of my endeavors...so it is what is I guess?:3
         <br>
         So here's an overview of my software interests and efforts.<br> For more information  :<a class="hyper" href="https://github.com/sudheesh4"><b>github/@sudheesh4</b></a>.
