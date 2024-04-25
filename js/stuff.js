@@ -27,6 +27,7 @@
     ["And others!"]],
     [["Familiar with web-scraping, scientific-computation and application development. Primarily comfortable with python."],
     ["Experience with web-development and AGILE based software-engineering methodology."],
+    ["Machine un-learning on MNIST dataset"],
     ["Implemented (RAG based) LLM integrated services. ('Chat-with-a-philosopher' , 'Document quiz-feedback'...) "],
     [" For more information  : <a  href='https://github.com/sudheesh4'><b>github/@sudheesh4</b></a>."],
     ]
@@ -180,6 +181,20 @@ Sandpile a typical example of such a model, where we drop sand particle by parti
     Check it out <a class="hyper"  href="https://docsumm.streamlit.app/" target="_blank"><b><u>HERE</u></b></a></p>
    
     </li>
+    
+        <li>
+        <h5>Machine Un-learning</h5>
+        <p>
+        Explored a specific protocol to implement machine un-learning, i.e. remove the 'learned' aspect of the model for a specfic part of dataset while maintaining the fidelity for overall model performance.
+        Followed ideas from <a class='hyper' href="https://arxiv.org/abs/2111.08947"> <u>Fast Yet Effective Machine Unlearning</u></a> 
+        and implemented on MNIST dataset, to understand a proof-of-concept working of the technique. The intuitive understanding that I gained through the process was the idea that model-learning involves random-drifts in the high-dimensional parameter space. These drifts in the training phase are determined by gradient descent fields.
+        So intutively, one way to approach machine-unlearning (remove learned aspects for a portion of dataset) is to reverse the 'drifts' corresponding to the specific dataset. This however, isnt so straightforward because of the nonlinear nature of the training flows. Moreover, maintaining fidelity of overall model performance amounts to maintaing
+        closeness in the distribution sense, which is also very nontrivial. However, following the mentioned paper, an approach of using noise tailored to data-to-be-forgotten, in an impair-repair fashion can be implemented to execute few-shot unlearning.
+            </p>
+         <br><img src='img/app/unlearn.png' class='dets_im'><br>Example: Model performance comparison after few-shot 'unlearning' portion of MNIST dataset.</img>
+        
+       
+        </li>
     <li><h5>(Almost) trivial recreations:</h6>
         <p>I tried to generate a rap to keep convey this part of my endeavors...so it is what is I guess?:3
         <br>
