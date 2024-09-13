@@ -224,7 +224,14 @@ With every line of code, I'm learning the most.<br>
         <br><img src='img/app/chitti2.jpg' class='dets_im'>Paired up with multimodal accessibilities! Talks to you, listens to you and can see what you show!</img>
     </li>
     
-
+  <li>
+  <h5>Grokking</h5>
+  <p>
+  Exploring emergent phenomenon in deep neural networks.    </p>
+   <br><img src='img/app/grok.png' class='dets_im'><br>Example: Grokfast algorithm on MNIST[1]</img>
+[1]Power, Alethea, et al. "Grokking: Generalization beyond overfitting on small algorithmic datasets." arXiv preprint arXiv:2201.02177 (2022).  
+ 
+  </li>
     </ul>
     `;
     
@@ -283,8 +290,10 @@ albeit under different names. In this study, we delved into the interaction betw
     
     </img>
       <br>
+      
       <p>[1] Benjamin, T.B. (1967). Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences. 299 (1456): 59–76. </p>
-        
+        <img class='dets_im' src='img/acad/oddminus.png'> </img>   <br>Parity-modified MI
+           <br>
     <h5>MORE INFO: &nbsp &nbsp
     
     <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR22/Session/Q11.6" > LINK1</a>
@@ -345,8 +354,10 @@ albeit under different names. In this study, we delved into the interaction betw
            <br> <img class='dets_im' src='img/acad/cascadesf.png'> </img>   <br>Deformation of direct cascade with variation of dispersion
           <br> <img class='dets_im' src='img/acad/thermalisationcasc.png'> </img>   <br>Example of Thermalisation of a perturbed thermal equibrium.
              <br>
-           
-           <h5>MORE INFO:    (Ongoing; In preparation)
+<img class='dets_im' src='img/acad/Spectrum_3_7.png'> </img>   <br>
+   <br>   <img class='dets_im' src='img/acad/Energy_3_7.png'> </img>   <br>Multi-component MMT
+      <br>        
+           <h5>MORE INFO:    (Ongoing;)
 
            </h5>
         
