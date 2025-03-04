@@ -295,13 +295,13 @@ albeit under different names. In this study, we delved into the interaction betw
         <img class='dets_im' src='img/acad/oddminus.png'> </img>   <br>Parity-modified MI
            <br>
     <h5>MORE INFO: &nbsp &nbsp
+
     
-    <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR22/Session/Q11.6" > LINK1</a>
-,
-  <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://meetings.aps.org/Meeting/MAR23/Session/Z66.7" > LINK2</a>
+    <a class='hyper' target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2406.04570" > LINK</a>
+
     
     </h5>
-    (Arxiv preprint link to be updated)
+
     <br>
     <br>
     </li>
